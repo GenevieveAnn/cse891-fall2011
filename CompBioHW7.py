@@ -42,7 +42,7 @@ def make_dates_dict(fish_d):
 
 dates_d = make_dates_dict(fish_d)
 
-print dates_d
+# print dates_d
 
 datelist = ["10/9", "12/1"]
 ## create function to report the fish eaten on a list of dates from fish_d
@@ -72,6 +72,8 @@ def get_dates_by_fish(dates_d, fishlist):
 fish_d = load_csv('https://raw.github.com/ctb/edda/master/doc/beacon-2011/tutorial5/fishies.csv')
 dates_d = make_dates_dict(fish_d)
 
-print get_fishes_by_date(fish_d, datelist)
-print get_dates_by_fish(dates_d, fishlist)
+list_of_fish = get_fishes_by_date(fish_d, datelist)
+print list_of_fish
+
+# print get_dates_by_fish(dates_d, fishlist)
 
